@@ -1,4 +1,5 @@
 body{
+
     margin:0;
     animation: an1 0.7s;
 }
@@ -35,6 +36,9 @@ background: #347FC4 0% 0% no-repeat padding-box;
 border: none;
 border-radius: 1em;
 opacity: 1;
+}
+.messages{
+
 }
 button
 {

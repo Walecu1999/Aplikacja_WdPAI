@@ -7,7 +7,7 @@
 <body>
     <div class="base-container">
         <nav>
-            <img src="public/img/logo.svg">
+            <img src="public/img/logos.svg">
             <ul>
                 <li>
                     <i class="fas fa-hand-holding-heart"></i>
