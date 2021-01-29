@@ -3,7 +3,6 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <title> LOGIN PAGE </title>
     <script type="text/javascript" src="./public/js/script.js" defer></script>
-    <script type="text/javascript" src="./public/js/script.js" defer></script>
 </head>
 <body>
 <div class="container">

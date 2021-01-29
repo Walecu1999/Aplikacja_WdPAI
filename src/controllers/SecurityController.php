@@ -12,6 +12,7 @@ class SecurityController extends AppController {
     }
     public function logout(){
         if(isset($_COOKIE['id'])){
+            $this->userRepository->logOut($_COOKIE['id']);
             unset($_COOKIE['id']);
             setcookie('id', null, -1, '/');
         }
@@ -39,6 +40,7 @@ class SecurityController extends AppController {
         }
         setcookie('id', $user->getId(), time()+(86400 * 30), "/");
         $user = $userRepository->getUser($email);
+        $userRepository->logUser($user->getId());
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/main");

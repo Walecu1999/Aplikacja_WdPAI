@@ -4,7 +4,7 @@ require 'Routing.php';
 
 $path = trim($_SERVER['REQUEST_URI'], '/');
 $path = parse_url( $path, PHP_URL_PATH);
-Router::get('psycho', 'DefaultController');
+Router::get('psycho', 'UserController');
 Router::post('logout', 'SecurityController');
 Router::get('index', 'DefaultController');
 Router::get('main', 'DefaultController');

@@ -60,4 +60,22 @@ class UserRepository extends Repository
         return $statement->fetch()['id'];
     }
 
+    public function getVolunteers(): array{
+
+        $results = [];
+        $statement = $this->execute('SELECT * from users WHERE volunteer=true');
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($result as $rs){
+            $results[] = $rs;
+        }
+        return $results;
+    }
+
+    public function logUser(int $userId){
+        $this->execute('UPDATE users SET enable=true WHERE id=?', [$userId]);
+    }
+    public function logOut(int $userId)
+    {
+        $this->execute('UPDATE users SET enable=false WHERE id=?',[$userId]);
+    }
 }

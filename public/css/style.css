@@ -63,30 +63,7 @@ input{
 
 }
 
-@media only screen and (max-device-width: 420px){
-    .container{
-        flex-direction: column;
 
-    }
-    * {
-        font-size: 36px;
-    }
-    .login-container, .logo{
-        width: 100%;
-
-    }
-    form{
-        width: 80%;
-        height: 80%;
-        margin: 2.7em;
-
-    }
-    img{
-
-        height: 7em;
-        margin: 4em;
-    }
-}
 .base-container{
 
     display: flex;
@@ -159,12 +136,113 @@ main {
     box-shadow: 0 0 0.2em red;
     outline: none;
 }
-section.volunteer{
-    text-align: center;
+#psychology{
+    display: flex;
     width: 50%;
+    height: 5em;
+    background: #347FC4 0% 0% no-repeat padding-box;
 }
-section.psycho{
-    border-left: 2px solid gray;
+#volunteer{
+    display: flex;
+    width: 50%;
+    height: 5em;
+    background: #347FC4 0% 0% no-repeat padding-box;
+}
+section.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-   width: 50%;
+    border-left: 2px solid gray;
+    width: 50%;
+
+}
+section.card div{
+
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 50%;
+    /*height: 5em;*/
+    background: #347FC4 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+}
+section.card a{
+    text-decoration: none;
+    color: black;
+    background: #DBDBDB 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 30px;
+
+}
+.profiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.profiles .profile{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    background: transparent linear-gradient(180deg, #D99100 55%, #FFFFFF 100%, #006C78 100%) 45% 45% no-repeat padding-box;
+}
+.profiles .profile .user-image{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 30px;
+    background: WHITE;
+}
+.profiles .profile .user-description{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.hidden-element{
+    display: none;
+}
+.displayed-element{
+    display: block;
+}
+@media only screen and (max-device-width: 420px){
+    .container{
+        flex-direction: column;
+
+    }
+    * {
+        font-size: 36px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .login-container, .logo{
+        width: 100%;
+
+    }
+    form{
+        width: 80%;
+        height: 80%;
+        margin: 2.7em;
+
+    }
+    img{
+
+        height: 7em;
+        margin: 4em;
+    }
+
+    .profiles{
+        height: 100%;
+    }
+    .profiles .profile .user-image{
+        width: 5em;
+        height: 5em;
+    }
 }

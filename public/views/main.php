@@ -6,27 +6,23 @@
 </head>
 <body>
     <div class="base-container">
-    <?php include("nav.php"?>
+    <?php include("nav.php")?>
         <main>
-            <section class="volunteer" style="width: 50vw">
+            <section class="card" >
 
-                <div id="project-1">
-                    <div>
-                        <h2>Volunteer</h2>
-                        <p>description</p>
-                        <div class="social-section">
-                            <i class="fas fa-heart"> 600</i>
-                            <i class="fas fa-minus-square"> 121</i>
-                        </div>
-                    </div>
+                <div>
+                    <h2>Psychology</h2>
+                    <p>description</p>
+                    <a href="psycho">SELECT</a>
                 </div>
-                <div>project 2</div>
 
             </section>
-            <section class="psycho" style="width: 50vw">
-                
-                    <h2>Psychology</h2>
+            <section class="card" >
+                <div>
+                    <h2>Volunteer</h2>
                         <p>description</p>
+                    <a>LET'S TALK</a>
+                </div>
             </section>
         </main>
     </div>
