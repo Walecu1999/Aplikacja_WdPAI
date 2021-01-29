@@ -11,6 +11,10 @@ class DefaultController extends AppController {
 
     public function main()
     {
-        $this->render('main');
+        $this->render2('main');
+    }
+    public function psycho()
+    {
+        $this->render2('psycho');
     }
 }

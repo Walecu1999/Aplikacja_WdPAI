@@ -20,7 +20,8 @@ class AppController {
 
     protected function render(string $template = null, array $variables = [])
     {
-        $templatePath = 'public/views/'. $template.'.php';
+        $templatePath = 'public/views/'.$template.'.php';
+        echo "tutaj ".$templatePath;
         $output = 'File not found';
 
         if(file_exists($templatePath)){
@@ -31,5 +32,13 @@ class AppController {
             $output = ob_get_clean();
         }
         print $output;
+    }
+    protected function render2(string $template = null, array $variables = []){
+        if(isset($_COOKIE['id']))
+            $this->render($template,$variables);
+        else {
+            $url = "http://$_SERVER[HTTP_HOST]";
+            header("Location: {$url}/index");
+        }
     }
 }

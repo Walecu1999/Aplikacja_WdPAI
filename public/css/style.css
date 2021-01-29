@@ -154,6 +154,11 @@ main {
         transform:rotateX(0);
     }
 }
+.no-valid{
+    border:3px solid red;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
 section.volunteer{
     text-align: center;
     width: 50%;

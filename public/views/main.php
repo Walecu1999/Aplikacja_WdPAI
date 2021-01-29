@@ -6,33 +6,7 @@
 </head>
 <body>
     <div class="base-container">
-        <nav>
-            <img src="public/img/logos.svg">
-            <ul>
-                <li>
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <a href="#" class="button">GET HELP</a>
-                </li>
-                <li>
-                    <i class="far fa-address-card" aria-hidden="true" style="
-                 width: 16px;"></i>
-                    <a href="#" class="button">OUR TEAM</a>
-                </li>
-                <li>
-                    <i class="fas fa-hat-cowboy"></i>
-                    <a href="#" class="button">AUTHORS</a>
-                </li>
-                <li>
-                    <i class="fas fa-pen-nib"></i>
-                    <a href="#" class="button">BLOG</a>
-                </li>
-                <li>
-                    <i class="fas fa-phone-square-alt"></i>
-                    <a href="#" class="button">CONTACT</a>
-                </li>
-
-            </ul>
-        </nav>
+    <?php include("nav.php"?>
         <main>
             <section class="volunteer" style="width: 50vw">
 
