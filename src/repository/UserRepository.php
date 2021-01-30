@@ -73,6 +73,7 @@ class UserRepository extends Repository
 
     public function logUser(int $userId){
         $this->execute('UPDATE users SET enable=true WHERE id=?', [$userId]);
+        $this->execute('INSERT INTO logs VALUES(DEFAULT, ?, DEFAULT)', [$userId]);
     }
     public function logOut(int $userId)
     {

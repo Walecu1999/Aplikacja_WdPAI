@@ -17,6 +17,7 @@ body{
 .logo{
     display: flex;
     text-align: center;
+    justify-content: center;
     width: 26em;
 }
 .login-container{
@@ -236,6 +237,14 @@ section.card a{
 
     .login-container, .logo{
         width: 100%;
+
+    }
+    .login-footer a{
+        color: #347FC4;
+        text-decoration: underline;
+    }
+    .login-container{
+        background: transparent;
 
     }
     form{
