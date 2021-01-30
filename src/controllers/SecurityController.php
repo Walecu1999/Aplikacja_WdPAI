@@ -35,7 +35,7 @@ class SecurityController extends AppController {
             return $this->render('login', ['messages' => ['User with this email not exist!']]);
         }
 //        if ($user->getPassword() !== password_hash($password, PASSWORD_DEFAULT) ){
-        if ($user->getPassword() !== md5($password)){
+         if(!password_verify($password, $user->getPassword())){
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
         setcookie('id', $user->getId(), time()+(86400 * 30), "/");
@@ -62,7 +62,7 @@ class SecurityController extends AppController {
         if($email=="" | $password=="" | $name=="" | $surname==""){
             return $this->render('register', ['messages' => ['Wprowadz dane']]);
         }
-        $user = new User(0, $email,md5($password), $name, $surname);
+        $user = new User(0, $email,password_hash($password, PASSWORD_DEFAULT), $name, $surname);
         $this->userRepository->addUser($user);
         return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
     }

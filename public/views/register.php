@@ -24,7 +24,7 @@
             <input name="name" type="text"  placeholder="Name">
             <input name="surname" type="text"  placeholder="Surname">
 
-            <button type="submit">Create account/button>
+            <button class="button" type="submit">Create account </button>
         </form>
     </div>
 

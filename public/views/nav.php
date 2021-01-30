@@ -2,29 +2,46 @@
     <img src="public/img/logos.svg">
     <ul>
         <li>
-            <i class="fas fa-hand-holding-heart"></i>
-            <a href="#" class="button">GET HELP</a>
+            <a href="main" class="button">
+                    GET HELP
+                <i class="fas fa-hand-holding-heart"></i>
+            </a>
         </li>
         <li>
-            <i class="far fa-address-card" aria-hidden="true" style="
-                 width: 16px;"></i>
-            <a href="#" class="button">OUR TEAM</a>
+            <a href="team" class="button">
+                    OUR TEAM
+                <i class="far fa-address-card" aria-hidden="true"></i>
+            </a>
         </li>
         <li>
-            <i class="fas fa-hat-cowboy"></i>
-            <a href="#" class="button">AUTHORS</a>
+            <a href="authors" class="button">
+                    AUTHORS
+                    <i class="fas fa-hat-cowboy"></i>
+            </a>
         </li>
         <li>
-            <i class="fas fa-pen-nib"></i>
-            <a href="#" class="button">BLOG</a>
+            <a href="#" class="button">
+                    BLOG
+                    <i class="fas fa-pen-nib"></i>
+            </a>
         </li>
         <li>
-            <i class="fas fa-phone-square-alt"></i>
-            <a href="#" class="button">CONTACT</a>
+            <a href="#" class="button">
+                    CONTACT
+                    <i class="fas fa-phone-square-alt"></i>
+            </a>
         </li>
         <li>
-            <i class="fas fa-sign-out-alt"></i>
-            <a href="logout" class="button">LOGOUT</a>
+            <a href="#" class="button">
+                MY ACCOUNT
+                <i class="fas fa-user"></i>
+            </a>
+        </li>
+        <li>
+            <a href="logout" class="button">
+                    LOGOUT
+                    <i class="fas fa-sign-out-alt"></i>
+            </a>
 
         </li>
 

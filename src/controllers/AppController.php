@@ -21,7 +21,6 @@ class AppController {
     protected function render(string $template = null, array $variables = [])
     {
         $templatePath = 'public/views/'.$template.'.php';
-        echo "tutaj ".$templatePath;
         $output = 'File not found';
 
         if(file_exists($templatePath)){

@@ -19,9 +19,13 @@
                  </div>
                 <input name="email" type="text" placeholder="email@email.com">
                 <input name="password" type="password"  placeholder="password">
-                <button type="submit">LOGIN</button>
-                <a href="register" class="button">Stwórz konto</a>
+                <button type="submit" >LOGIN</button>
+
+
             </form>
+                <div class="login-footer">Not a member?
+                    <a href="register" >Sign Up</a>
+                </div>
         </div>
 
     </div>

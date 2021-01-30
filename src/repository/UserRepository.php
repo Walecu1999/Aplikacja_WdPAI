@@ -60,10 +60,10 @@ class UserRepository extends Repository
         return $statement->fetch()['id'];
     }
 
-    public function getVolunteers(): array{
+    public function getUsers(int $role): array{
 
         $results = [];
-        $statement = $this->execute('SELECT * from users WHERE volunteer=true');
+        $statement = $this->execute('SELECT * from users WHERE role=? ', [$role]);
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $rs){
             $results[] = $rs;
